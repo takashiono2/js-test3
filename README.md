@@ -6,3 +6,4 @@
 - #05 addEventListner（）を使ってみよう
 - #06 要素の属性を操作しよう
 - #07 classNameを操作してみよう
+- #08 classListを使ってみよう
