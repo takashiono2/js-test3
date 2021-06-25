@@ -1,11 +1,22 @@
 'use strict';
 {
   document.querySelector('button').addEventListener('click',()=>{
-    const targetNode = document.getElementById('target');
-    // targetNode.textContent = 'dotinstall';
-    targetNode.textContent = targetNode.dataset.translation;
+    const item2 = document.createElement('li')
+    item2.textContent = 'item 2';
+    // const ulNode = document.querySelector('ul')
+    const ul = document.querySelector('ul')
+    ul.appendChild(item2);
   });
 }
+
+// #9
+// {
+//   document.querySelector('button').addEventListener('click',()=>{
+//     const targetNode = document.getElementById('target');
+//     // targetNode.textContent = 'dotinstall';
+//     targetNode.textContent = targetNode.dataset.translation;
+//   });
+// }
 
 // {
 //   document.querySelector('button').addEventListener('click',()=>{
