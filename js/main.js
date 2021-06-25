@@ -1,11 +1,18 @@
 'use strict';
 {
-  function update(){
-    // document.querySelectorAll('p')[1].textContent = 'Changed！';
-    // document.getElementById('target').textContent = 'Changed！';
-    document.querySelectorAll('p').forEach((p,index)=>{
-      p.textContent = `${index}番目のpです`;
-    });
-  }
-  setTimeout(update, 1000);
+  document.querySelector('button').addEventListener('click',()=>{
+    const targetNode = document.getElementById('target');
+
+    targetNode.textContent ='Changed！';
+    targetNode.title ='This is Title';
+    targetNode.style.color ='red';
+    targetNode.style.backgroundColor ='skyblue';
+  });
 }
+
+// {
+//   function update(){
+//     document.getElementById('target').textContent ='Changed！';
+//   }
+//   document.querySelector('button').addEventListener('click',update);
+// }
