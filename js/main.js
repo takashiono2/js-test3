@@ -1,11 +1,23 @@
 'use strict';
 {
   document.querySelector('button').addEventListener('click',()=>{
-    const item1 = document.querySelectorAll('li')[1];
-    // item1.remove();
-    document.querySelector('ul').removeChild(item1);
+    const li = document.createElement('li');
+    const text = document.querySelector('input');
+    li.textContent = text.value;
+    document.querySelector('ul').appendChild(li);
+    text.value = '';
+    text.focus();
   });
 }
+
+// #12
+// {
+//   document.querySelector('button').addEventListener('click',()=>{
+//     const item1 = document.querySelectorAll('li')[1];
+//     // item1.remove();
+//     document.querySelector('ul').removeChild(item1);
+//   });
+// }
 
 // #11
 // {
