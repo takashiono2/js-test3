@@ -4,10 +4,21 @@
   document.querySelector('button').addEventListener('dblclick',()=>{
     console.log('Double Cliked！');
   });
-  document.addEventListener('mousemove',()=>{
-    console.log('moved!');
+  document.addEventListener('keydown',e=>{
+    // console.log('moved!');
+    console.log(e.key);
   });
 }
+
+// #17
+// {
+//   document.querySelector('button').addEventListener('dblclick',()=>{
+//     console.log('Double Cliked！');
+//   });
+//   document.addEventListener('mousemove',()=>{
+//     console.log('moved!');
+//   });
+// }
 
 // #16
 // {
