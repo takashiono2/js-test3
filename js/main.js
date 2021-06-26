@@ -1,12 +1,22 @@
 'use strict';
 
 {
-  document.querySelector('form').addEventListener('submit',(e)=>{
-    e.preventDefault();
-    console.log('submit!')
+  document.querySelector('ul').addEventListener('click',e =>{
+    if(e.target.nodeName === 'LI'){
+      e.target.classList.toggle('done');
+    }
   });
 
 }
+
+// #20
+// {
+//   document.querySelector('form').addEventListener('submit',(e)=>{
+//     e.preventDefault();
+//     console.log('submit!')
+//   });
+
+// }
 // #19
 // {
 //  const text = document.querySelector('textarea');
