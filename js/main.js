@@ -1,14 +1,32 @@
 'use strict';
 
 {
-  document.querySelector('button').addEventListener('dblclick',()=>{
-    console.log('Double Cliked！');
-  });
-  document.addEventListener('keydown',e=>{
-    // console.log('moved!');
-    console.log(e.key);
-  });
+ const text = document.querySelector('textarea');
+//  text.addEventListener('focus',()=>{
+//    console.log('focus!');
+//  });
+//  text.addEventListener('blur',()=>{
+//   console.log('blur');
+// });
+ text.addEventListener('input',()=>{
+   console.log(text.value.length);
+ });
+ text.addEventListener('change',()=>{
+  console.log('change');
+});
+
 }
+
+// #18
+// {
+//   document.querySelector('button').addEventListener('dblclick',()=>{
+//     console.log('Double Cliked！');
+//   });
+//   document.addEventListener('keydown',e=>{
+//     // console.log('moved!');
+//     console.log(e.key);
+//   });
+// }
 
 // #17
 // {
