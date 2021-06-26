@@ -2,12 +2,28 @@
 
 {
   document.querySelector('button').addEventListener('click',()=>{
+    const colors = document.querySelectorAll('input');
+    let selectColor;
+    colors.forEach(color =>{
+      if(color.checked === true){
+        selectColor = color.value;
+      }
+    });
     const li = document.createElement('li');
-    const color = document.querySelector('select');
-    li.textContent = `${color.value}-${color.selectedIndex}`;
+    li.textContent = selectColor
     document.querySelector('ul').appendChild(li);
   });
 }
+
+// #14
+// {
+//   document.querySelector('button').addEventListener('click',()=>{
+//     const li = document.createElement('li');
+//     const color = document.querySelector('select');
+//     li.textContent = `${color.value}-${color.selectedIndex}`;
+//     document.querySelector('ul').appendChild(li);
+//   });
+// }
 
 // #13
 // {
