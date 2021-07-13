@@ -1,13 +1,14 @@
 'use strict';
-
 {
-  document.querySelector('ul').addEventListener('click',e =>{
-    if(e.target.nodeName === 'LI'){
-      e.target.classList.toggle('done');
-    }
-  });
+  
 
 }
+// #21
+// document.querySelector('ul').addEventListener('click',e =>{
+//   if(e.target.nodeName === 'LI'){
+//     e.target.classList.toggle('done');
+//   }
+// });
 
 // #20
 // {
@@ -168,4 +169,13 @@
 //     document.getElementById('target').textContent ='Changed！';
 //   }
 //   document.querySelector('button').addEventListener('click',update);
+// }
+
+// #2
+// {
+//   function update(){
+//     document.getElementById('target').textContent = 'DotInstall';
+//   }
+  
+// setTimeout(update,1000);
 // }
