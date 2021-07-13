@@ -1,7 +1,8 @@
 'use strict';
 {
-  
-
+    document.querySelector('button').addEventListener('click',()=>{
+      document.querySelector('#target').textContent = 'DotInstall';
+    });
 }
 // #21
 // document.querySelector('ul').addEventListener('click',e =>{
