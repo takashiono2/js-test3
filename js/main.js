@@ -1,12 +1,9 @@
 'use strict';
 {
-  // #6
+  // #7
   document.querySelector('button').addEventListener('click',()=>{
     const targetNode = document.querySelector('#target');
-    targetNode.textContent = 'DotInstall';
-    targetNode.title = 'this is Title';
-    targetNode.style.color = 'red';
-    targetNode.style.backgroundColor = 'skyblue';
+    targetNode.className = "my-color my-border";
   });
 }
 // #21
@@ -159,6 +156,7 @@
 //   });
 // }
 
+// #6
 // {
 //   document.querySelector('button').addEventListener('click',()=>{
 //     const targetNode = document.getElementById('target');
