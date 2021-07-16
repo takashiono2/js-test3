@@ -1,10 +1,15 @@
 'use strict';
 {
-  // #7
+  // #8
   document.querySelector('button').addEventListener('click',()=>{
-    const targetNode = document.querySelector('#target');
-    targetNode.className = "my-color my-border";
-  });
+     const targetNode = document.querySelector('#target');
+     targetNode.classList.toggle("my-color");
+    //  if (targetNode.classList.contains("my-color")===true){
+    //   targetNode.classList.remove("my-color");
+    //  }else{
+    //   targetNode.classList.add("my-color");
+    //  }
+   });
 }
 // #21
 // document.querySelector('ul').addEventListener('click',e =>{
@@ -153,6 +158,14 @@
 //     const targetNode = document.getElementById('target');
 //     // targetNode.textContent = 'dotinstall';
 //     targetNode.textContent = targetNode.dataset.translation;
+//   });
+// }
+
+// {
+//   // #7
+//   document.querySelector('button').addEventListener('click',()=>{
+//     const targetNode = document.querySelector('#target');
+//     targetNode.className = "my-color my-border";
 //   });
 // }
 
