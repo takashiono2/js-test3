@@ -1,15 +1,10 @@
 'use strict';
 {
-  // #8
+  // #9
   document.querySelector('button').addEventListener('click',()=>{
      const targetNode = document.querySelector('#target');
-     targetNode.classList.toggle("my-color");
-    //  if (targetNode.classList.contains("my-color")===true){
-    //   targetNode.classList.remove("my-color");
-    //  }else{
-    //   targetNode.classList.add("my-color");
-    //  }
-   });
+     targetNode.textContent = targetNode.dataset.translation;
+  });
 }
 // #21
 // document.querySelector('ul').addEventListener('click',e =>{
@@ -159,6 +154,19 @@
 //     // targetNode.textContent = 'dotinstall';
 //     targetNode.textContent = targetNode.dataset.translation;
 //   });
+// }
+
+// {
+//    // #8
+//    document.querySelector('button').addEventListener('click',()=>{
+//       const targetNode = document.querySelector('#target');
+//       targetNode.classList.toggle("my-color");
+//       //  if (targetNode.classList.contains("my-color")===true){
+//       //   targetNode.classList.remove("my-color");
+//       //  }else{
+//       //   targetNode.classList.add("my-color");
+//       //  }
+//    });
 // }
 
 // {
