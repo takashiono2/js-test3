@@ -1,11 +1,15 @@
 'use strict';
+// #10
 {
-  // #9
   document.querySelector('button').addEventListener('click',()=>{
-     const targetNode = document.querySelector('#target');
-     targetNode.textContent = targetNode.dataset.translation;
+    const item2 = document.createElement('li');
+    item2.textContent= 'item 2';
+    const ul = document.querySelector('ul');
+    ul.appendChild(item2);
   });
 }
+
+// 
 // #21
 // document.querySelector('ul').addEventListener('click',e =>{
 //   if(e.target.nodeName === 'LI'){
