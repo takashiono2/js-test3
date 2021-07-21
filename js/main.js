@@ -1,12 +1,17 @@
 'use strict';
 
-// #12
+// #13
 {
   document.querySelector('button').addEventListener('click',()=>{
-    const item1 = document.querySelectorAll('li')[1];
-    document.querySelector('ul').removeChild(item1);
+    const li = document.createElement('li');
+    const ul = document.querySelector('ul');
+    const text = document.querySelector('input');
+    li.textContent = text.value;
+    ul.appendChild(li);
+    
+    text.value ='';
+    text.focus();
   });
-  
 }
 
 // 
