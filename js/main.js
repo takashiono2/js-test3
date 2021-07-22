@@ -1,17 +1,15 @@
 'use strict';
 
-// #13
+// #14
 {
   document.querySelector('button').addEventListener('click',()=>{
     const li = document.createElement('li');
     const ul = document.querySelector('ul');
-    const text = document.querySelector('input');
-    li.textContent = text.value;
+    const text = document.querySelector('select');
+    li.textContent = `${text.value}-${text.selectedIndex}`;
     ul.appendChild(li);
-    
-    text.value ='';
-    text.focus();
-  });
+  })
+
 }
 
 // 
