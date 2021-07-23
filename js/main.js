@@ -1,15 +1,21 @@
 'use strict';
 
-// #14
+// #15
 {
   document.querySelector('button').addEventListener('click',()=>{
-    const li = document.createElement('li');
-    const ul = document.querySelector('ul');
-    const text = document.querySelector('select');
-    li.textContent = `${text.value}-${text.selectedIndex}`;
-    ul.appendChild(li);
-  })
+    const colors = document.querySelectorAll('input');
+    let selectedColor;
+    colors.forEach(color=>{
+      if(color.checked === true){
+        selectedColor = color.value;
+      }
+    });
 
+    const li = document.createElement('li');
+    li.textContent = selectedColor;
+    const ul = document.querySelector('ul');
+    ul.appendChild(li);
+  });
 }
 
 // 
