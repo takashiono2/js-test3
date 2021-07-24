@@ -1,12 +1,26 @@
 'use strict';
 
-// #18
+// #19
 {
-  document.addEventListener('mousemove',e =>{
-    console.log(e.clientX,e.clientY);
+const text = document.querySelector('textarea');
+  // text.addEventListener('focus',e=>{
+  //   console.log('focus');
+  // });
+
+  // text.addEventListener('blur',e=>{
+  //   console.log('blur');
+  // });
+
+  // text.addEventListener('input',e=>{
+  //   console.log('input');
+  // });
+
+  text.addEventListener('input',e=>{
+    console.log(text.value.length);
   });
-  document.addEventListener('keydown',e =>{
-    console.log(e.key);
+
+  text.addEventListener('change',e=>{
+    console.log('change');
   });
 }
 
