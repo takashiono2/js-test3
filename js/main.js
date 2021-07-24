@@ -1,12 +1,12 @@
 'use strict';
 
-// #17
+// #18
 {
-  document.querySelector('button').addEventListener('dblclick',()=>{
-    console.log('クリックしたよ');
+  document.addEventListener('mousemove',e =>{
+    console.log(e.clientX,e.clientY);
   });
-  document.addEventListener('mousemove',()=>{
-    console.log('マウスを動かした');
+  document.addEventListener('keydown',e =>{
+    console.log(e.key);
   });
 }
 
