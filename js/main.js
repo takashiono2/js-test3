@@ -1,23 +1,13 @@
 'use strict';
 
-// #15
+// #17
 {
-  document.querySelector('button').addEventListener('click',()=>{
-    const colors = document.querySelectorAll('input');
-    const selectedColors = [];
-    
-    colors.forEach(color=>{
-      if(color.checked===true){
-        selectedColors.push(color.value);
-      }
-    });
-    
-    const li = document.createElement('li');
-    li.textContent = selectedColors;
-    const ul = document.querySelector('ul');
-    ul.appendChild(li);
+  document.querySelector('button').addEventListener('dblclick',()=>{
+    console.log('クリックしたよ');
   });
-
+  document.addEventListener('mousemove',()=>{
+    console.log('マウスを動かした');
+  });
 }
 
 // 
