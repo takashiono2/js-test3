@@ -1,26 +1,10 @@
 'use strict';
 
-// #19
+// #20
 {
-const text = document.querySelector('textarea');
-  // text.addEventListener('focus',e=>{
-  //   console.log('focus');
-  // });
-
-  // text.addEventListener('blur',e=>{
-  //   console.log('blur');
-  // });
-
-  // text.addEventListener('input',e=>{
-  //   console.log('input');
-  // });
-
-  text.addEventListener('input',e=>{
-    console.log(text.value.length);
-  });
-
-  text.addEventListener('change',e=>{
-    console.log('change');
+  document.querySelector('form').addEventListener('submit',e=>{
+    e.preventDefault();
+    console.log('submit');
   });
 }
 
